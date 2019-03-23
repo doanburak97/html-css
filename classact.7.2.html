@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		table{width: 100%}
+		th {text-align:left;}
+	</style>
+	<script type="text/javascript">
+		var amount;
+		var principal;
+		var principal1;
+		var rate;
+		var rate1;
+
+		principal=window.prompt("Enter principal:");
+		rate=window.prompt("Enter rate:");
+
+		principal1=parseInt(principal);
+		rate1=parseInt(rate);
+
+		document.writeln("<table border=\"1\">");
+		document.writeln("<caption>Calculating compound interest </caption>");
+		document.writeln("<thead><tr><th>YEAR</th>");
+		document.writeln("<th> Amount on deposite </th>");
+		document.writeln("</tr> </thead> </tbody>");
+
+		for  (var year=1; year<=10; ++year){
+			amount=principal*Math.pow(1.0+rate,year);
+			document.writeln("<tr><td>"+year+"</td><td>"+amount.toFixed(2)+"</td>></tr>");
+		}
+		document.writeln("</tbody></table>");
+	</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>Printing Multiple Lines</title>
+	<script type="text/javascript">
+			
+			
+			document.writeln("<h1>Welcome to <br />javascript" + "<br />Programming!</h1>");
+
+			window.alert("Welcome to\nJavaScript\nProgramming");
+
+			//---------------------------------------------
+
+			var name;
+
+			name = window.prompt("Please enter your name:"),
+			document.writeln("<h1>Hello, "+name+",welcome to Javascript pogramming. </h1>")
+			
+			//---------------------------------------------
+			
+			var firstNumber;
+			var secondNumber;
+			var number1;
+			var number2;
+			var sum;
+
+			//read in first number from user as a string
+			firstNumber=window.prompt("Enter first integer");
+
+			//read in second number from user as a string
+			secondNumber=window.prompt("Enter second integer");
+
+			//convert numbers from string to integer
+			number1 = parseInt(firstNumber);
+			number2 = parseInt(secondNumber);
+
+			sum = number1 + number2;
+
+			//display the results
+			document.writeln("<h1>The sum is " + sum + "</h1>")
+
+			//---------------------------------------------
+			
+			var name;
+			var now=new Date();
+			var hour=now.getHours();
+
+			name=window.prompt("Please enter your name:");
+
+			if (hour < 12) 
+			
+				document.write("<h1>Good morning, ");
+			
+			if (hour>=12) {
+				hour = hour - 12;
+			
+			if (hour<6) 
+				document.write("<h1>Good Afternoon. ");
+
+			if (hour>=6) 
+				document.write("<h1>Good Evening. ");
+						
+			}
+
+			document.writeln(name + ",welcome to Javascript Programming</h1>");
+
+			//-----------------------------------------------
+			
+	</script>
+
+</head>
+<body>
+
+
+
+</body>
+</html>
